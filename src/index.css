@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    letter-spacing: 2.5px;
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+
+body {
+    background: #8758ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input {
+    outline: none;
+    background: none;
+    border: 1px solid #8758ff;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #ffffff4d;
+}
+
+.btn {
+    background: #8758ff;
+    color: #fff;
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.wrapper {
+    background: #1A1A40;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8758ff;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.delete-icon {
+    margin-left: 0.8rem;
+}
+
+.edit-icon,
+.delete-icon {
+    cursor: pointer;
+}
+
+p {
+    cursor: pointer;
+}
+
+.incompleted {
+    color: #fff;
+    cursor: pointer;
+}
+
+.completed {
+    color: #c5aeff;
+    text-decoration: line-through;
+    cursor: pointer;
 }
